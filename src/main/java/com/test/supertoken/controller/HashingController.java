@@ -21,8 +21,7 @@ public class HashingController {
     private RateLimiter rateLimiter;
     @Autowired
     private HashTaskExecutor hashTaskExecutor;
-
-    //rishabhpoddar-github
+    
     @PostMapping("/hash")
     public HashOutput hash(@RequestBody HashInput input) {
         Request request = (() -> HASH_API_IDENTIFIER);
